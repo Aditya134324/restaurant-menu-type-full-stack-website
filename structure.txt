@@ -1,0 +1,70 @@
+restaurant menu type full stack website/
+├─ mern project/
+│  ├─ backend/
+│  │  ├─ src/
+│  │  │  ├─ config/
+│  │  │  │  └─ database.js
+│  │  │  ├─ controllers/
+│  │  │  │  ├─ consumercontroller.js
+│  │  │  │  └─ menucontroller.js
+│  │  │  ├─ models/
+│  │  │  │  ├─ consumer.js
+│  │  │  │  └─ menu.js
+│  │  │  └─ routes/
+│  │  │     ├─ consumerRoutes.js
+│  │  │     └─ menuRoutes.js
+│  │  ├─ .env
+│  │  ├─ package-lock.json
+│  │  ├─ package.json
+│  │  └─ server.js
+│  └─ frontend/
+│     ├─ public/
+│     │  ├─ favicon.svg
+│     │  └─ icons.svg
+│     ├─ src/
+│     │  ├─ assets/
+│     │  │  ├─ background.png
+│     │  │  └─ background2.png
+│     │  ├─ components/
+│     │  │  ├─ form/
+│     │  │  │  ├─ consumerform.jsx
+│     │  │  │  └─ consumerform.module.css
+│     │  │  ├─ menu/
+│     │  │  │  ├─ menucard.jsx
+│     │  │  │  └─ menucard.module.css
+│     │  │  └─ navbar/
+│     │  │     ├─ navbar.jsx
+│     │  │     └─ navbar.module.css
+│     │  ├─ pages/
+│     │  │  ├─ dashboard/
+│     │  │  │  ├─ dashboard.jsx
+│     │  │  │  └─ dashboard.module.css
+│     │  │  ├─ home/
+│     │  │  │  ├─ home.jsx
+│     │  │  │  └─ home.module.css
+│     │  │  ├─ menupage/
+│     │  │  │  ├─ menu.jsx
+│     │  │  │  └─ menu.module.css
+│     │  │  └─ register/
+│     │  │     ├─ register.jsx
+│     │  │     └─ register.module.css
+│     │  ├─ services/
+│     │  │  └─ api.js
+│     │  ├─ App.css
+│     │  ├─ App.jsx
+│     │  ├─ index.css
+│     │  └─ main.jsx
+│     ├─ .gitignore
+│     ├─ eslint.config.js
+│     ├─ index.html
+│     ├─ package-lock.json
+│     ├─ package.json
+│     ├─ README.md
+│     └─ vite.config.js
+├─ output photo/
+│  ├─ Gemini_Generated_Image_nwoj79nwoj79nwoj.png
+│  ├─ gemini-watermark-removed.png
+│  ├─ Screenshot 2026-05-08 121555.png
+│  └─ Screenshot 2026-05-08 200617.png
+├─ MERN PROJECT.pdf
+└─ structure.txt
