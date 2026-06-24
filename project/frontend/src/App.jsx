@@ -1,25 +1,34 @@
-import { Routes, Route } from 'react-router-dom'
-import Navbar from './components/navbar/Navbar'
-import './App.css'
+import { Routes, Route , useLocation } from 'react-router-dom';
+import Navbar from './components/navbar/Navbar';
+import './App.css';
 
-import Home from './pages/home/Home'
-import Menu from './pages/menupage/Menu'
-import Register from './pages/register/register'
-import Dashboard from './pages/dashboard/dashboard'
+import Login from './pages/login/Login';
+import Signup from './pages/signup/Signup';
+import Home from './pages/home/Home';
+import Menu from './pages/menupage/Menu';
+import Register from './pages/register/Register';
+import Dashboard from './pages/dashboard/Dashboard';
 
-function App(){
-  return(
+function App() {
+
+  const location = useLocation();
+      
+  return (
     <>
-      <Navbar />
-        <img/>
+      {location.pathname !== '/' && location.pathname !== '/signup' && <Navbar />}
       <Routes>
-        <Route path='/' element={<Home />} />
+        {/* Authentication Pages */}
+        <Route path='/' element={<Login />} />
+        <Route path='/signup' element={<Signup />} />
+
+        {/* Main Pages */}
+        <Route path='/home' element={<Home />} />
         <Route path='/menu' element={<Menu />} />
         <Route path='/register' element={<Register />} />
         <Route path='/dashboard' element={<Dashboard />} />
       </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

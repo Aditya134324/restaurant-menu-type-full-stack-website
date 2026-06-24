@@ -5,6 +5,8 @@ import dotenv from 'dotenv';
 import {connectDB} from './src/config/database.js';
 import menuRoutes from './src/routes/menuRoutes.js';
 import consumerRoutes from './src/routes/consumerRoutes.js';
+import authRoutes from './src/routes/authRoutes.js';
+import searchMenuRoutes from './src/routes/searchMenu.js';
 
 dotenv.config();
 
@@ -16,6 +18,8 @@ connectDB();
 
 app.use('/api/menu',menuRoutes);
 app.use('/api/consumers',consumerRoutes);
+app.use('/api/auth',authRoutes);
+app.use('/api/menu',searchMenuRoutes);
 
 const PORT = process.env.PORT || 3000;
 

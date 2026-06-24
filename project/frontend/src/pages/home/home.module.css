@@ -25,11 +25,13 @@
   margin-bottom:20px;
 }
 
-.overlay button{
+ .menuLink{
   padding:12px 25px;
   border:none;
   border-radius:8px;
   background:orange;
   color:white;
   font-size:18px;
+  text-decoration:none;
+
 }
