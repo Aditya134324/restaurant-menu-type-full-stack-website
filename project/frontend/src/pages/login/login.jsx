@@ -29,7 +29,7 @@ const Login = ()=>{
 
     return(
         <div className={styles.container}>
-            <h1 className={styles.name}>Food Hub 🍔</h1>
+            <h1 className={styles.name}>Food Hub</h1>
             <form className={styles.form} onSubmit={handleSubmit}>
                 <h1 className={styles.head}>Login</h1>
                 <label className={styles.label}>Email</label>
